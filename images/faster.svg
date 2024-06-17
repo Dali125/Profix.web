@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2772ff"/>
+      <stop offset="1" stop-color="#1129a0"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_2904" data-name="Ellipse 2904" cx="30" cy="30" r="30" transform="translate(452.861 3605.861)" fill="#e0ecf7"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_9355" data-name="Rectangle 9355" width="40" height="40" transform="translate(811.926 1106.926)" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_18209" data-name="Group 18209" transform="translate(-360 -2768)">
+    <g id="Group_18071" data-name="Group 18071" transform="translate(-40 -2355)">
+      <circle id="Ellipse_2903" data-name="Ellipse 2903" cx="30" cy="30" r="30" transform="translate(400 5123)" fill="#f4f8ff"/>
+      <g id="Mask_Group_968" data-name="Mask Group 968" transform="translate(-52.861 1517.139)" clip-path="url(#clip-path)">
+        <g id="Mask_Group_980" data-name="Mask Group 980" transform="translate(-349.064 2508.936)" clip-path="url(#clip-path-2)">
+          <path id="flash" d="M33.206,15.492a.837.837,0,0,0-.728-.424H21.519L23.356,1.029A.841.841,0,0,0,21.814.482L8.487,23.832A.837.837,0,0,0,9.2,25.107h10.8l-1.456,14.06a.842.842,0,0,0,1.55.515L33.2,16.334a.837.837,0,0,0,.01-.842Z" transform="translate(811.087 1106.84)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

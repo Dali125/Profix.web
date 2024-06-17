@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_2869" data-name="Ellipse 2869" cx="30" cy="30" r="30" transform="translate(452.861 3605.861)" fill="#e0ecf7"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2772ff"/>
+      <stop offset="1" stop-color="#1129a0"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_18234" data-name="Group 18234" transform="translate(-1390 -4294)">
+    <g id="Group_15476" data-name="Group 15476" transform="translate(-20 277)">
+      <circle id="Ellipse_2875" data-name="Ellipse 2875" cx="30" cy="30" r="30" transform="translate(1410 4017)" fill="#f4f8ff"/>
+      <g id="Mask_Group_947" data-name="Mask Group 947" transform="translate(957.139 411.139)" clip-path="url(#clip-path)">
+        <g id="Group_18246" data-name="Group 18246" transform="translate(-3.799 -3.799)">
+          <g id="Group_18245" data-name="Group 18245" transform="translate(465.951 3619.189)">
+            <line id="Line_1437" data-name="Line 1437" y2="40.941" transform="translate(20.487)" fill="none" stroke="#aec6ff" stroke-linecap="round" stroke-width="2"/>
+            <line id="Line_1438" data-name="Line 1438" x1="41.418" transform="translate(0 20.471)" fill="none" stroke="#aec6ff" stroke-linecap="round" stroke-width="2"/>
+          </g>
+          <g id="Group_18244" data-name="Group 18244" transform="translate(470.064 3623.085)">
+            <g id="Apply_for_loan" data-name="Apply for loan" transform="translate(0 0)">
+              <g id="Group_15428" data-name="Group 15428" transform="translate(0 0)">
+                <path id="Path_12456" data-name="Path 12456" d="M52.221,35.832a16.39,16.39,0,1,1-16.39-16.39A16.39,16.39,0,0,1,52.221,35.832Z" transform="translate(-19.442 -19.442)" fill="url(#linear-gradient)"/>
+              </g>
+            </g>
+            <g id="Apply_for_loan-2" data-name="Apply for loan" transform="translate(9.127 9.127)">
+              <g id="Group_15428-2" data-name="Group 15428" transform="translate(0 0)">
+                <path id="Path_12456-2" data-name="Path 12456" d="M33.967,26.7A7.263,7.263,0,1,1,26.7,19.442,7.263,7.263,0,0,1,33.967,26.7Z" transform="translate(-19.442 -19.442)" fill="#fff"/>
+              </g>
+            </g>
+            <g id="Apply_for_loan-3" data-name="Apply for loan" transform="translate(12.458 12.458)">
+              <g id="Group_15428-3" data-name="Group 15428" transform="translate(0 0)">
+                <path id="Path_12456-3" data-name="Path 12456" d="M27.3,23.373a3.931,3.931,0,1,1-3.931-3.931A3.931,3.931,0,0,1,27.3,23.373Z" transform="translate(-19.442 -19.442)" fill="url(#linear-gradient)"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

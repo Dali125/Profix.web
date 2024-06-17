@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_2874" data-name="Ellipse 2874" cx="40" cy="40" r="40" transform="translate(-0.408 -0.408)" fill="#e0ecf7"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2772ff"/>
+      <stop offset="1" stop-color="#1129a0"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_18093" data-name="Group 18093" transform="translate(-1366.592 -5184.592)">
+    <path id="Path_103669" data-name="Path 103669" d="M39.592,0A39.592,39.592,0,1,1,0,39.592,39.592,39.592,0,0,1,39.592,0Z" transform="translate(1367 5185)" fill="#f4f8ff"/>
+    <g id="Group_15450" data-name="Group 15450" transform="translate(1367 5185)">
+      <g id="Mask_Group_949" data-name="Mask Group 949" clip-path="url(#clip-path)">
+        <g id="Apply_Anywhere_Anytime" data-name="Apply Anywhere Anytime" transform="translate(2.458 8.881)">
+          <rect id="Rectangle_9340" data-name="Rectangle 9340" width="47" height="60" rx="2" transform="translate(11.133 10.711)" fill="url(#linear-gradient)"/>
+          <path id="Path_105516" data-name="Path 105516" d="M16,18H28.491M16,25.807H47.228M16,33.614H47.228M16,41.421H47.228M16,49.228H47.228M16,57.035H37.86" transform="translate(2.806 3.974)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+          <path id="Path_105517" data-name="Path 105517" d="M59.431,21.38a3.123,3.123,0,0,1,.546,4.383l-1.356,1.742L38.745,53.037a.157.157,0,0,1-.063.048L33.119,55.4a.156.156,0,0,1-.214-.167l.88-5.961a.158.158,0,0,1,.031-.073L53.692,23.669l1.357-1.743A3.123,3.123,0,0,1,59.431,21.38Z" transform="translate(12.295 5.502)" fill="#aec6ff" fill-rule="evenodd"/>
+          <path id="Path_105518" data-name="Path 105518" d="M53.692,23.669l1.357-1.743a3.123,3.123,0,0,1,4.382-.546h0a3.123,3.123,0,0,1,.546,4.383l-1.356,1.742m-4.928-3.837L33.817,49.2a.158.158,0,0,0-.031.073l-.88,5.961a.156.156,0,0,0,.214.167l5.562-2.316a.157.157,0,0,0,.063-.048L58.621,27.505m-4.928-3.837,4.928,3.837" transform="translate(12.295 5.502)" fill="none" stroke="#aec6ff" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

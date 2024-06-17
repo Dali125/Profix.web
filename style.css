@@ -1,0 +1,150 @@
+
+
+.loanCalDiv {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.herobg{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('images/pp.jpeg');
+}
+.loanimage{
+    background-image: url('images/Loanpic.jpg');
+    background-size: cover;
+}
+
+.loanSelectorHeader {
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+}
+
+.loanSelectorHeader h3 {
+    margin: 0;
+}
+
+.items {
+    padding: 20px;
+}
+
+.items label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.items input[type="radio"] {
+    margin-right: 10px;
+}
+
+.items input[type="number"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+.items input[type="number"]:focus {
+    border-color: #007bff;
+}
+
+.items select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+.items select:focus {
+    border-color: #007bff;
+}
+
+.items span.rounded {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f4f4f9;
+}
+
+#totalAmount {
+    padding: 10px;
+    display: inline-block;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.animate-gradient{
+
+    background-size: 400%;
+    background-size: 400%;
+
+
+  animation: blob 17s ease infinite;  
+}
+
+
+
+@keyframes blob {
+
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+    
+}
+
+@keyframes scaleAnimation {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .animate-scale {
+            animation: scaleAnimation 4s infinite;
+        }
+
+        .mix-colors {
+            mix-blend-mode: screen;
+        }
+        
+        
+        animate-delay-1 {
+            animation-delay: 0s;
+        }
+
+        .animate-delay-2 {
+            animation-delay: 1s;
+        }
+
+        .animate-delay-3 {
+            animation-delay: 2s;
+        }

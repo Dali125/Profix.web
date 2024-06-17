@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_2904" data-name="Ellipse 2904" cx="30" cy="30" r="30" transform="translate(452.861 3605.861)" fill="#e0ecf7"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2772ff"/>
+      <stop offset="1" stop-color="#1129a0"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_18215" data-name="Group 18215" transform="translate(-360 -2958)">
+    <g id="Group_18087" data-name="Group 18087" transform="translate(-40 -2165)">
+      <circle id="Ellipse_2903" data-name="Ellipse 2903" cx="30" cy="30" r="30" transform="translate(400 5123)" fill="#f4f8ff"/>
+      <g id="Mask_Group_968" data-name="Mask Group 968" transform="translate(-52.861 1517.139)" clip-path="url(#clip-path)">
+        <path id="Credit_Worthiness_Evaluation" data-name="Credit Worthiness Evaluation" d="M50.254,16.679H46.9V11H44.663v5.679H19.5V11H17.268v5.679h-2.8A4.508,4.508,0,0,0,10,21.222V26.9H54.727V21.222A4.508,4.508,0,0,0,50.254,16.679Zm4.473,12.494H10V50.754A4.508,4.508,0,0,0,14.473,55.3H50.254a4.508,4.508,0,0,0,4.473-4.543Zm-27.4,6.247a1.136,1.136,0,0,0,0,2.272h7.621L29.145,48.506a1.145,1.145,0,0,0,.446,1.541,1.109,1.109,0,0,0,1.517-.453l6.619-12.326a1.249,1.249,0,0,0-1.08-1.848Z" transform="translate(450.498 3610.564)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>
