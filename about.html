@@ -7,18 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"> -->
 
-
   
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     
 
     <title>About Us</title>
+        <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="myNav" class="fixed flex flex-row justify-between top-0 left-0 z-20 bg-white shadow-lg h-18 w-screen">
+    <div id="myNav" class="fixed hidden lg:flex flex-row justify-between top-0 left-0 z-20 bg-white shadow-lg h-18 w-screen">
 
         <img src="images/logo_transparent.png" alt="" width="65" height="65" class="img-fluid my-auto">
 
@@ -33,19 +34,38 @@
                 href="apply.html">Apply
                 Now</a>
 
-
-
         </div>
 
-
     </div>
+<!-- Navigation for Mobile Devices -->
+  <div id="mobileNav" class="fixed md:hidden flex flex-row justify-between top-0 left-0 z-20 bg-white shadow-lg h-18 w-screen">
+    <img src="images/logo_transparent.png" alt="Logo" width="65" height="65" class="img-fluid my-auto">
+    <button id="menuButton" class="text-black mr-6 my-auto focus:outline-none">
+      <i id="menuIcon" class="fas fa-bars text-2xl"></i>
+     
+    </button>
+  </div>
+
+  <!-- Mobile Menu (Hidden by default) -->
+  <div id="mobileMenu" class="hidden md:hidden fixed top-18 left-0 z-20 bg-white w-screen shadow-lg">
+    <div class="flex w-full justify-between">
+      <div></div>
+      <i id="closeIcon" class="fas fa-times text-2xl hidden"></i>
+    </div>
+     
+    <a href="index.html" class="block px-4 py-2 border-b">Home</a>
+    <a href="#contactus" class="block px-4 py-2 border-b">About</a>
+    <a href="emical.html" class="block px-4 py-2 border-b">EMI Calculator</a>
+    <a href="#contact" class="block px-4 py-2 border-b">Contact</a>
+    <a href="apply.html" class="block px-4 py-2 bg-black text-white">Apply Now</a>
+  </div>
+
     <section class="pt-20 bg-white">
 
         <p id="abo" class="text-center font-bold text-4xl pb-20">About US</p>
 
-
-        <div class="flex flex-row">
-        <div class="m-2  w-1/2 h-screen">
+        <div class="flex lg:flex-row flex-col">
+        <div class="m-2  lg:w-1/2 h-screen">
             <p class=" text-4xl font-bold">Who Are We?</p>
 
             <p class="text-2xl text-justify pt-6 pb-2"><span class="pl-4"></span> Profix Monel Lenders is a micro lending company
@@ -55,9 +75,21 @@
             </p>
             <p class="text-2xl text-justify"><span class="pl-4"></span> Profix Money Lenders continues to seek and provide affordable rates and payment facilities that cut acrosss various income capacities of your clients</p>
         </div>
-        <div class="p-2 w-1/2 h-screen bg-black text-center rounded-lg text-white">
+        <div class="p-2 lg:w-1/2 h-screen bg-black text-center lg:rounded-lg text-white">
+          
+          <div class="flex justify-center items-center w-full h-1/2">
+            <div class="">
+              <img
+              id="mission"
+              height=150
+              width=150
+              src="images/BackgroundEraser_20240617_124054418.png">
+            </div>
+            
+          </div>
 
-            <link type="image/png" sizes="96x96" rel="icon" href=".../icons8-mission-96.png">
+            
+              
             
             <p class=" text-4xl font-bold">Our Mission</p>
 
@@ -67,26 +99,43 @@
         </div>
 
     </section>
-    <section class="pt-20 bg-white">
-
+    <section class="bg-gray-100 pt-5 w-screen">
+ <p class="text-center pb-10 text-4xl font-bold">Our Values</p>
         
-
-        <div class="flex flex-row">
-        <div class="m-2  w-1/2 h-screen">
-           
-        </div>
-        <div class="p-2 w-1/2 h-screen bg-black text-center rounded-lg text-white">
+<div class="bg-gray-100 p-4">
+  <div class="container mx-auto">
+    <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-xl font-bold mb-2">INTEGRITY</h2>
+               <p class="text-gray-700">We will uphold the highest level of ethical business practices. This means consistently conducting our operations in an honest and transparent manner. We strive to build trust with our clients and stakeholders by adhering to our principles and maintaining the highest standards of professionalism and ethics in every aspect of our business.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-xl font-bold mb-2">HONESTY</h2>
+             <p class="text-gray-700">We will maintain transparency in all interactions with our clients. Honesty is at the core of our company values. By being truthful and open in all communications, we build stronger relationships with our clients and partners. We believe that honesty fosters trust and credibility, which are essential for long-term success and collaboration.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-xl font-bold mb-2">FAIRNESS</h2>
+        <p class="text-gray-700">We shall treat all customers, employees, and stakeholders with respect and fairness.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-xl font-bold mb-2">ACCOUNTABILITY</h2>
+        <p class="text-gray-700">We shall be accountable to our shareholders, customers, and regulatory authorities.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-xl font-bold mb-2">TEAM WORK</h2>
+        <p class="text-gray-700">We believe teamwork is what will enable the company to achieve its goals.</p>
+      </div>
+    </div>
+  </div>
+</div>
         
-        </div>
-        </div>
 
     </section>
 
    
   
 
-
-   </div>
+   
     
  <section class="footer-main bg-gray-500  py-10">
  
@@ -159,7 +208,33 @@
    
 </section> 
 
+ <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const menuIcon = document.getElementById('menuIcon');
+      const closeIcon = document.getElementById('closeIcon');
 
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        menu.classList.remove('fade-out');
+        menu.classList.add('fade-in');
+        menuIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+      } else {
+        menu.classList.remove('fade-in');
+        menu.classList.add('fade-out');
+        setTimeout(() => {
+          menu.classList.add('hidden');
+        }, 300);
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      }
+    }
+
+    document.getElementById('menuButton').addEventListener('click', toggleMobileMenu);
+    document.getElementById('closeIcon').addEventListener('click', toggleMobileMenu);
+    
+  </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
