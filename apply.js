@@ -1,15 +1,16 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     // Firebase configuration
-  
     const firebaseConfig = {
-    apiKey: "AIzaSyCXDT04M79hEgG_fTgIFzY4Wp8vbf3aBMs",
-    authDomain: "livetap-891da.firebaseapp.com",
-    projectId: "livetap-891da",
-    storageBucket: "livetap-891da.appspot.com",
-    messagingSenderId: "556672856671",
-    appId: "1:556672856671:web:95190b7b22d5461ce921ea",
-    measurementId: "G-SF7EGC4E8X"
-  };
+      apiKey: "AIzaSyCXDT04M79hEgG_fTgIFzY4Wp8vbf3aBMs",
+      authDomain: "livetap-891da.firebaseapp.com",
+      projectId: "livetap-891da",
+      storageBucket: "livetap-891da.appspot.com",
+      messagingSenderId: "556672856671",
+      appId: "1:556672856671:web:95190b7b22d5461ce921ea",
+      measurementId: "G-SF7EGC4E8X"
+    };
+    
+    
 
     // Initialize Firebase
     const app = firebase.initializeApp(firebaseConfig);
@@ -33,7 +34,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
      const aadhaarNumber = document.getElementById('aadhaarNumber').value;
      const loanAmount = document.getElementById('loanAmount').value;
      const loanType = document.getElementById('loanType').value;
-     const currentOccupaton = document.getElementById('currentOccupaton').value;
+     const currentOccupaton = document.getElementById('currentOccupation').value;
      const netMonthlyIncome = document.getElementById('netMonthlyIncome').value;
 
 
