@@ -1,24 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    // Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyCXDT04M79hEgG_fTgIFzY4Wp8vbf3aBMs",
-      authDomain: "livetap-891da.firebaseapp.com",
-      projectId: "livetap-891da",
-      storageBucket: "livetap-891da.appspot.com",
-      messagingSenderId: "556672856671",
-      appId: "1:556672856671:web:95190b7b22d5461ce921ea",
-      measurementId: "G-SF7EGC4E8X"
-    };
-    
+ 
     
 
-    // Initialize Firebase
-    const app = firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore(app);
-
-    // Form submission event listener
-   let subut =  document.getElementById('subut');
-   
 
 
    // 
@@ -57,7 +40,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
      }
 
      //Calling the function to post to the database.
-     postData(db, myData )
+     postData( myData )
        
         
      
@@ -84,48 +67,44 @@ function showToast(message) {
 }
 
 
-function postData() {
-  const SENDGRID_API_KEY = 'QttU3vOcRxu9AjHOURT81A.yjTSAeEVQbUoBdT-orEvbHQ-z5_HNeilJqSA-fpr5vI';
-
-  const data = {
-    "personalizations": [
-      {
-        "to": [
-          {
-            "email": "dalitsongulube@gmail.com"
-          }
-        ]
-      }
-    ],
-    "from": {
-      "email": "test@example.com"
-    },
-    "subject": "Loan Request",
-    "content": [
-      {
-        "type": "text/plain",
-        "value": "and easy to do anywhere, even with cURL"
-      }
-    ]
+function postData(data) {
+  var templateParams = {
+    name: 'James',
+    notes: 'Check this out!',
   };
 
-  const apiUrl = 'http://localhost:3000/send-email'; // Proxy server URL
-
-  fetch(apiUrl, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
+  emailjs.init({
+    publicKey: 'dDNXhI9KMvhiBvJs7',
+    // Do not allow headless browsers
+    blockHeadless: false,
+    blockList: {
+      // Block the suspended emails
+      list: ['foo@emailjs.com', 'bar@emailjs.com'],
+      // The variable contains the email address
+      watchVariable: 'userEmail',
     },
-    body: JSON.stringify({ SENDGRID_API_KEY, data })
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log('Success:', data);
-    showToast("Data added successfully!");
-  })
-  .catch((error) => {
-    console.error('Error:', error);
-    showToast("Error adding data!");
+    limitRate: {
+      // Set the limit rate for the application
+      id: 'app',
+      // Allow 1 request per 10s
+      throttle: 10000,
+    },
   });
+  
+
+  emailjs.send("service_jdb7o3e","template_ab531jh",{
+    to_name: "Profix Web",
+    from_name: "Profix Website",
+    message: "A loan of '" + data.loanAmount + "' has been requested by " + data.firstName + ""+data.lastName+". ",
+    }).then(
+    (response) => {
+      console.log('SUCCESS!', response.status, response.text);
+    },
+    (error) => {
+      console.log('FAILED...', error);
+    },
+  );
+
+ 
 }
 

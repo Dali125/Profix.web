@@ -52,4 +52,5 @@ document.querySelectorAll('input[name="loanType"]').forEach((elem) => {
 // Initial setup to set the borrow amount based on the default selected loan type
 document.addEventListener("DOMContentLoaded", function() {
     setBorrowAmount();
+    
 });
