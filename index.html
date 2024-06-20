@@ -24,13 +24,13 @@
 <body class="scroll-smooth">
       <div id="myNav" class="fixed hidden lg:flex flex-row justify-between top-0 left-0 z-20 bg-white shadow-lg h-18 w-screen">
 
-        <img src="images/logo_transparent.png" alt="" width="65" height="65" class="img-fluid my-auto">
+        <a href="/index.html"><img  src="images/logo_transparent.png" alt="" width="65" height="65" class="img-fluid my-auto"></a>
 
         <div class="hidden md:flex h-full pt-1 font-semibold items-center pr-6">
 
             <a href="index.html" class="nav-item nav-link active pr-10">Home</a>
             <a href="#contactus" class="nav-item nav-link pr-10">About</a>
-            <a href="emical.html" class="pr-10">EMI Calculator</a>
+            <a href="#loanCalc" class="pr-10">EMI Calculator</a>
             <a href="#contact" class="nav-item nav-link pr-10">Contact</a>
 
             <a class="h-12 flex rounded-lg justify-center items-center text-white bg-black w-full "
@@ -60,7 +60,7 @@
      
     <a href="index.html" class="block px-4 py-2 border-b">Home</a>
     <a href="#contactus" class="block px-4 py-2 border-b">About</a>
-    <a href="emical.html" class="block px-4 py-2 border-b">EMI Calculator</a>
+    <a href="#loanCalc" class="block px-4 py-2 border-b">EMI Calculator</a>
     <a href="#contact" class="block px-4 py-2 border-b">Contact</a>
     <a href="apply.html" class="block px-4 py-2 bg-black text-white">Apply Now</a>
   </div>
@@ -91,12 +91,12 @@
         </div>
 
     </div>
-    <section class="pl-3 pr-3 text-white bg-black w-screen ">
-        <p id="contactus" class="text-5xl font-bold pt-10 pb-5 pt-20 ">ABOUT US</p>
+    <section class="pl-3 pr-3 text-white bg-gradient-to-bl from-blue-400 via-blue-600 to-blue-900 w-screen ">
+        <p id="contactus" class="text-5xl font-bold pt-10 pb-5 pt-20 text-center">ABOUT US</p>
 
-        <div class="flex flex-col lg:w-1/2">
-           <p class="text-3xl pb-10"> Your financial welfare is our concern.</p>
-            <p class="text-justify text-2xl pb-4 mb-10">ProFix Money Lenders is a micro lending company registered with the Patents and
+        <div class="flex flex-col justify-center items-center">
+           <p class="text-3xl pb-10 text-center"> Your financial welfare is our concern.</p>
+            <p class="text-2xl text-center pb-4 mb-10">ProFix Money Lenders is a micro lending company registered with the Patents and
                 Company Registra:on Agency (PACRA). ProFix Money Lenders seeks to provide affordable finance across the
                 Zambian market.</p>
 
@@ -109,8 +109,9 @@
  
    
     </section>
+    <!-- The Loan Calculator UI-->
 
-    <section class="w-full h-[900px] lg:h-[900px] bg-amber-700 flex lg:flex flex-col md:flex-col lg:flex-row">
+    <section id="loanCalc" class="w-full h-[900px] lg:h-[900px] bg-amber-700 flex lg:flex flex-col md:flex-col lg:flex-row">
 
         <div class="lg:w-1/2 hidden md:flex md:w-screen h-full bg-green-600">
 

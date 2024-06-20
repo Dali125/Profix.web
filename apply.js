@@ -84,25 +84,48 @@ function showToast(message) {
 }
 
 
-function postData(databaseReference, data){
+function postData() {
+  const SENDGRID_API_KEY = 'QttU3vOcRxu9AjHOURT81A.yjTSAeEVQbUoBdT-orEvbHQ-z5_HNeilJqSA-fpr5vI';
 
+  const data = {
+    "personalizations": [
+      {
+        "to": [
+          {
+            "email": "dalitsongulube@gmail.com"
+          }
+        ]
+      }
+    ],
+    "from": {
+      "email": "test@example.com"
+    },
+    "subject": "Loan Request",
+    "content": [
+      {
+        "type": "text/plain",
+        "value": "and easy to do anywhere, even with cURL"
+      }
+    ]
+  };
 
-  //Define the collection where the loans will go
-  var usersCollection = databaseReference.collection('loanRequests');
+  const apiUrl = 'http://localhost:3000/send-email'; // Proxy server URL
 
-
-
-  usersCollection.add(data)
-  .then(function (docRef){
-    //If posting is succesful
+  fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ SENDGRID_API_KEY, data })
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Success:', data);
     showToast("Data added successfully!");
-
-
-
-  }).catch(function(error){
-
-    //If we fail to post the data.
-    showToast("Failed to add data: " + error.message + "Please Try Again Later."); 
-
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+    showToast("Error adding data!");
   });
 }
+
