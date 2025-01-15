@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const subut = document.getElementById('subut');
 
   // Add click event listener to the submit button
-  subut.addEventListener('click', (event) => {
+  subut.addEventListener('click',async (event) => {
     event.preventDefault();
 
     // Fetch all input values
@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const netMonthlyIncome = document.getElementById('netMonthlyIncome').value;
     const genderMale = document.getElementById('genderMale').checked;
     const genderFemale = document.getElementById('genderFemale').checked;
+    const fileUpload = document.getElementById('fileUpload').files[0];
 
     const currentOcupationText = currentOccupation.options[currentOccupation.selectedIndex].text;
     const loanTypeText = loanType.options[loanType.selectedIndex].text;
@@ -50,7 +51,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
       loanType === '4' ||
       currentOccupation === '0' ||
       netMonthlyIncome.trim() === '' ||
-      (!genderMale && !genderFemale)
+      (!genderMale && !genderFemale) ||
+      !fileUpload
     ) {
       // Show toast notification for missing fields
       showToast('Please fill in all required fields.');
@@ -58,37 +60,26 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     // Data to be posted
-    var myData = {
-      firstName: firstName,
-      lastName: lastName,
-      email: email,
-      phoneNumber: phoneNumber,
-      maritalStatus: isMarried,
-      address: address,
-      nrcOrLicense: nrcOrLicense,
-      aadhaarNumber: aadhaarNumber,
-      loanAmount: loanAmount,
-      loanType: loanTypeText,
-      currentOccupation: currentOcupationText,
-      netMonthlyIncome: netMonthlyIncome,
-      gender: genderMale ? 'Male' : 'Female'
-    };
+    var myData = new FormData();
+    myData.append('firstName', firstName);
+    myData.append('lastName', lastName);
+    myData.append('email', email);
+    myData.append('phoneNumber', phoneNumber);
+    myData.append('maritalStatus', isMarried);
+    myData.append('address', address);
+    myData.append('nrcOrLicense', nrcOrLicense);
+    myData.append('aadhaarNumber', aadhaarNumber);
+    myData.append('loanAmount', loanAmount);
+    myData.append('loanType', loanTypeText);
+    myData.append('currentOccupation', currentOcupationText);
+    myData.append('netMonthlyIncome', netMonthlyIncome);
+    myData.append('gender', genderMale ? 'Male' : 'Female');
+    myData.append('fileUpload', fileUpload);
 
     //Print to console
     console.log(myData);
-    console.log(currentOcupationText);
 
-    console.log(
-      
-      `${myData.firstName}  ${myData.lastName} (${myData.gender}),
-        has made a ${myData.loanType}  request of '${myData.loanAmount}'.
-         The current occupation is ${myData.currentOccupation} and the net monthly income is ${myData.netMonthlyIncome}.
-         Their address is ${myData.address}.
-          The email belonging to ${myData.firstName}  ${myData.lastName} is ${myData.email},
-           the phone number is ${myData.phoneNumber}. The current Marital Status is ${myData.maritalStatus} ,and the ${myData.nrcOrLicense} number is ${myData.aadhaarNumber} `)
-
-    // // Calling the function to post to the database
-    // postData(myData);
+   const response = await postData(myData)
 
   });
 
@@ -104,26 +95,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
     swal(message, "", "success");
   }
 
-  function postData(data) {
-    // Example emailjs.send function (you might need to adapt this to your specific setup)
-    emailjs.send("service_jdb7o3e", "template_ab531jh",  {
-      to_name: "Profix Web",
-      from_name: "Profix Website",
-      message: `${data.firstName}  ${data.lastName} (${data.gender}),
-        has made a ${data.loanType}  request of '${data.loanAmount}'.
-         Their address is ${data.address}.
-          The email belonging to ${data.firstName}  ${data.lastName} is ${data.email},
-           the phone number is ${data.phoneNumber}. The current Marital Status is ${data.maritalStatus} and the ${data.nrcOrLicense} number is ${data.aadhaarNumber} `,
-    }).then(
-      (response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        showSuccess("Application submitted Succesfully")
+  async function postData(data) {
+    fetch('/api/loan-application', {
+      method: 'POST',
+      headers:{
+
+
       },
-      (error) => {
-        console.log('FAILED...', error);
-        showToast(error);
-      }
-    );
+      body: data
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+      showSuccess("Application submitted successfully");
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+      showToast('Failed to submit application');
+    });
   }
 
 });

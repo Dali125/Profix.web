@@ -1,0 +1,22 @@
+body {
+    height: 100vh;
+}
+
+.about -section, .my-hero {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.loancalc {
+    background-image: url('/static/images/Loanpic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
